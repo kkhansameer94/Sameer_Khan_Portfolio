@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Sameer Khan | Cloud & DevOps Engineer Portfolio</title>
+  <meta name="title" content="Sameer Khan | Cloud & DevOps Engineer Portfolio">
+  <meta name="description" content="B.Sc. IT Graduate specializing in Cloud Infrastructure, DevOps Automation, Docker, Kubernetes, AWS, and CI/CD. Explore my interactive terminal and real-world DevOps projects.">
+  <meta name="keywords" content="DevOps Engineer, Cloud Engineer, AWS, Docker, Kubernetes, CI/CD, Infrastructure as Code, Mumbai, B.Sc IT, Linux, Terraform, Jenkins, GitHub Actions">
+  <meta name="author" content="Sameer Khan">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kkhansameer94.github.io/">
+  <meta property="og:title" content="Sameer Khan | Cloud & DevOps Engineer">
+  <meta property="og:description" content="B.Sc. IT Graduate specializing in Cloud Infrastructure, DevOps Automation, and modern CI/CD practices. Interactive portfolio with working DevOps terminal.">
+  <meta property="og:image" content="https://kkhansameer94.github.io/og-image.jpg">
+  
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://kkhansameer94.github.io/">
+  <meta property="twitter:title" content="Sameer Khan | Cloud & DevOps Engineer">
+  <meta property="twitter:description" content="B.Sc. IT Graduate specializing in Cloud Infrastructure and DevOps. Interactive terminal simulator showcasing real DevOps commands.">
+  <meta property="twitter:image" content="https://kkhansameer94.github.io/og-image.jpg">
+  
+  <!-- Favicon - Inline SVG Cloud Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2338bdf8'/><path d='M30 55c0-8 6-14 14-14 2 0 4 1 6 2 2-5 7-9 13-9 8 0 14 6 14 14 0 1 0 2-1 3 5 1 9 6 9 11 0 7-5 12-12 12H32c-6 0-11-5-11-11 0-5 3-9 7-10z' fill='%23ffffff'/></svg>">
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Fonts with display=swap for performance -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Sameer Khan - Home">
+        <span class="logo-bracket" aria-hidden="true">&lt;</span>Sameer<span class="accent-dot" aria-hidden="true">.</span><span class="logo-bracket" aria-hidden="true">/&gt;</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-item active">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#terminal" class="nav-item">Terminal</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+        <li><button id="hire-me-btn" class="btn-nav" aria-label="Open hiring contact modal">Hire Me</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot" aria-hidden="true"></span> Available for Cloud & DevOps Roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Sameer Khan</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I build & automate with <span class="typed-text" id="typed-text" aria-live="polite"></span><span class="cursor" aria-hidden="true">&nbsp;</span>
+          </h2>
+          <p class="hero-description">
+            B.Sc. IT Graduate & passionate DevOps enthusiast dedicated to continuous integration, containerization with Docker & Kubernetes, and building bulletproof infrastructure on AWS.
+          </p>
+          
+          <!-- Only Two CTA Buttons - NO Resume Button -->
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#terminal" class="btn btn-glass">
+              <i class="fa-solid fa-terminal" aria-hidden="true"></i> <span>Launch CLI</span>
+            </a>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-num" data-target="99.9" aria-label="99.9 percent">0</span><span class="stat-unit">%</span>
+              <p class="stat-label">Pipeline Reliability</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="15" aria-label="15 plus">0</span><span class="stat-unit">+</span>
+              <p class="stat-label">Deployments & Labs</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="100" aria-label="100 percent">0</span><span class="stat-unit">%</span>
+              <p class="stat-label">Open Source Drive</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="tech-globe-wrapper">
+            <div class="avatar-ring">
+              <div class="avatar-inner">
+                <span class="avatar-letter">SK</span>
+              </div>
+            </div>
+            <!-- Floating Tech Badges -->
+            <div class="float-chip chip-1"><i class="fa-brands fa-docker"></i> Docker</div>
+            <div class="float-chip chip-2"><i class="fa-solid fa-dharmachakra"></i> Kubernetes</div>
+            <div class="float-chip chip-3"><i class="fa-brands fa-aws"></i> AWS Cloud</div>
+            <div class="float-chip chip-4"><i class="fa-brands fa-linux"></i> Linux OS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="section-header">
+        <span class="sub-title">BACKGROUND & MISSION</span>
+        <h2 class="title">Engineering <span>Reliable Systems</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-panel">
+          <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Who I Am</h3>
+          <p>
+            I am a B.Sc. IT graduate with an engineering mindset geared towards systems infrastructure, cloud architecture, and modern DevOps methodologies. I bridge the gap between application code and rock-solid deployment environments.
+          </p>
+          <div class="pill-group">
+            <span class="pill">B.Sc. IT Graduate</span>
+            <span class="pill">DevOps Practitioner</span>
+            <span class="pill">Infrastructure Automation</span>
+          </div>
+        </div>
+
+        <div class="about-card glass-panel">
+          <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-server"></i></div>
+          <h3>My Philosophy</h3>
+          <p>
+            Manual tasks are tech debt. I believe in <strong>Infrastructure as Code (IaC)</strong>, automated CI/CD checks, high availability, and proactive observability using Prometheus and Grafana.
+          </p>
+          <div class="pill-group">
+            <span class="pill">Zero Downtime</span>
+            <span class="pill">Fast Feedback Loops</span>
+            <span class="pill">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive DevOps Terminal Section -->
+    <section class="section terminal-section" id="terminal">
+      <div class="section-header">
+        <span class="sub-title">INTERACTIVE CONSOLE</span>
+        <h2 class="title">DevOps <span>CLI Experience</span></h2>
+        <p class="section-desc">Try commands: <code>help</code>, <code>skills</code>, <code>projects</code>, <code>docker ps</code>, <code>kubectl get pods</code></p>
+      </div>
+
+      <div class="terminal-container" role="application" aria-label="Interactive DevOps Terminal">
+        <div class="terminal-bar">
+          <div class="terminal-dots" aria-hidden="true">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="terminal-title">sameer@production-node: ~ (bash)</div>
+          <div class="terminal-actions">
+            <span class="badge-live">LIVE CLUSTER</span>
+          </div>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-output" id="terminal-output" aria-live="polite" aria-atomic="false">
+            <p>Welcome to Sameer's Interactive Terminal v2.4.0</p>
+            <p>Type <span class="highlight-cmd">'help'</span> to see available system commands.</p>
+          </div>
+          <div class="terminal-prompt-line">
+            <label for="terminal-input" class="sr-only">Terminal command input</label>
+            <span class="prompt-user">sameer@cloud</span>:<span class="prompt-path">~</span>$ 
+            <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="type a command..." aria-label="Terminal command input">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="section-header">
+        <span class="sub-title">TOOLCHAIN & PROFICIENCY</span>
+        <h2 class="title">My <span>Technical Arsenal</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <div class="skill-icon-wrap linux-icon" aria-hidden="true"><i class="fa-brands fa-linux"></i></div>
+            <div>
+              <h3>Linux & Shell</h3>
+              <p>Ubuntu, Bash Scripting, Cron, Systemd</p>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Linux and Shell proficiency: 90 percent">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <div class="skill-icon-wrap aws-icon" aria-hidden="true"><i class="fa-brands fa-aws"></i></div>
+            <div>
+              <h3>AWS Cloud Services</h3>
+              <p>EC2, S3, ECR, VPC, IAM, CloudWatch</p>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="AWS Cloud Services proficiency: 82 percent">
+            <div class="skill-progress" style="width: 82%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <div class="skill-icon-wrap docker-icon" aria-hidden="true"><i class="fa-brands fa-docker"></i></div>
+            <div>
+              <h3>Docker & Containers</h3>
+              <p>Multi-stage Builds, Compose, Image Optimization</p>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Docker and Containers proficiency: 88 percent">
+            <div class="skill-progress" style="width: 88%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <div class="skill-icon-wrap k8s-icon" aria-hidden="true"><i class="fa-solid fa-dharmachakra"></i></div>
+            <div>
+              <h3>Kubernetes & Helm</h3>
+              <p>Pods, Deployments, Services, ConfigMaps, Helm</p>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Kubernetes and Helm proficiency: 80 percent">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <div class="skill-icon-wrap cicd-icon" aria-hidden="true"><i class="fa-solid fa-code-commit"></i></div>
+            <div>
+              <h3>CI/CD Automation</h3>
+              <p>GitHub Actions, Jenkins Pipelines, Webhooks</p>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="CI/CD Automation proficiency: 85 percent">
+            <div class="skill-progress" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <div class="skill-icon-wrap mon-icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <h3>Monitoring & IaC</h3>
+              <p>Prometheus, Grafana, Terraform, GitOps</p>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Monitoring and Infrastructure as Code proficiency: 78 percent">
+            <div class="skill-progress" style="width: 78%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="section-header">
+        <span class="sub-title">REAL-WORLD IMPLEMENTATIONS</span>
+        <h2 class="title">Featured <span>Projects</span></h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters" role="group" aria-label="Project category filters">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+        <button class="filter-btn" data-filter="cloud" aria-pressed="false">Cloud & DevOps</button>
+        <button class="filter-btn" data-filter="automation" aria-pressed="false">Automation</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card glass-panel" data-category="cloud">
+          <div class="project-top-row">
+            <span class="badge-tag">CI/CD & Cloud</span>
+            <div class="project-links">
+              <a href="https://github.com/kkhansameer94" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Cloud-Native CI/CD Pipeline</h3>
+          <p class="project-desc">
+            End-to-end automated deployment pipeline using GitHub Actions, Docker containerization, AWS ECR image pushes, and automated rollouts to Kubernetes with Helm charts.
+          </p>
+          <div class="project-tech-tags" aria-label="Technologies used">
+            <span>AWS ECR</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>GitHub Actions</span>
+            <span>Helm</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/kkhansameer94" target="_blank" rel="noopener noreferrer" class="link-arrow">
+              View Repository <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-panel" data-category="automation">
+          <div class="project-top-row">
+            <span class="badge-tag">Shell & Automation</span>
+            <div class="project-links">
+              <a href="https://github.com/kkhansameer94/decodelabs-linux-basics" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Linux Administration & Automation Suite</h3>
+          <p class="project-desc">
+            Collection of automated bash scripts for server monitoring, log rotation, automated daily backups, security audits, and user permission management on Ubuntu environments.
+          </p>
+          <div class="project-tech-tags" aria-label="Technologies used">
+            <span>Linux</span>
+            <span>Bash</span>
+            <span>Ubuntu</span>
+            <span>Systemd</span>
+            <span>Cron</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/kkhansameer94/decodelabs-linux-basics" target="_blank" rel="noopener noreferrer" class="link-arrow">
+              View Repository <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass-panel" data-category="cloud">
+          <div class="project-top-row">
+            <span class="badge-tag">Observability</span>
+            <div class="project-links">
+              <a href="https://github.com/kkhansameer94" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Cluster Monitoring with Prometheus & Grafana</h3>
+          <p class="project-desc">
+            Configured dynamic monitoring stack for containerized infrastructure. Deployed Node Exporter, custom metric scrapers, and alerting rules connected to Slack/Email.
+          </p>
+          <div class="project-tech-tags" aria-label="Technologies used">
+            <span>Prometheus</span>
+            <span>Grafana</span>
+            <span>Alertmanager</span>
+            <span>Docker</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/kkhansameer94" target="_blank" rel="noopener noreferrer" class="link-arrow">
+              View Repository <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="section-header">
+        <span class="sub-title">INITIATE CONNECTION</span>
+        <h2 class="title">Let's <span>Build Together</span></h2>
+        <p class="section-desc">Open for Entry-level Cloud & DevOps Engineer roles, internships, and collaborative tech projects.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info-card glass-panel">
+          <div class="contact-info-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Mumbai, Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:samksamk2002@gmail.com" class="contact-link">samksamk2002@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-code-branch"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/kkhansameer94" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/kkhansameer94</a></p>
+            </div>
+          </div>
+
+          <div class="social-links-bar">
+            <a href="https://github.com/kkhansameer94" target="_blank" rel="noopener noreferrer" class="social-circle" title="GitHub Profile" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kkhansameer94" target="_blank" rel="noopener noreferrer" class="social-circle" title="LinkedIn Profile" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:samksamk2002@gmail.com" class="social-circle" title="Send Email" aria-label="Email"><i class="fa-solid fa-paper-plane"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form with Formspree Integration -->
+        <form class="contact-form glass-panel" id="contact-form" action="https://formspree.io/f/xjygvzrp" method="POST" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name<span class="required" aria-label="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email<span class="required" aria-label="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message<span class="required" aria-label="required">*</span></label>
+            <textarea id="message" name="message" rows="4" placeholder="Discussing an opportunity or collaboration..." required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span>Send Message</span> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Sameer Khan. Engineered with precision & speed.</p>
+      <div class="footer-links">
+        <a href="#home">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Hire Me Modal -->
+  <div id="hire-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <div class="modal-content">
+        <h2 id="modal-title" class="modal-title">Let's Build Together 🚀</h2>
+        <p class="modal-subtitle">Available for Entry-level Cloud & DevOps roles and internships</p>
+        
+        <div class="modal-email-section">
+          <div class="modal-email-label">Email Address</div>
+          <div class="modal-email-box">
+            <span class="modal-email-text" id="email-text">samksamk2002@gmail.com</span>
+            <button class="modal-copy-btn" id="copy-email-btn" aria-label="Copy email address">
+              <i class="fa-solid fa-copy"></i>
+              <span>Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samksamk2002@gmail.com&su=Hiring%20Inquiry%3A%20Cloud%20%26%20DevOps%20Role&body=Hi%20Sameer%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you.%0A%0ABest%20regards%2C" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="modal-btn modal-btn-gmail">
+            <i class="fa-brands fa-google"></i>
+            <span>Open in Gmail</span>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/kkhansameer94" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="modal-btn modal-btn-linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>Connect on LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen Reader Only Class for Accessibility -->
+  <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    .contact-link {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .contact-link:hover {
+      color: var(--primary);
+    }
+    .required {
+      color: var(--accent-red);
+      margin-left: 0.2rem;
+    }
+  </style>
+
+  <script src="script.js"></script>
+</body>
+</html>
